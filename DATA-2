@@ -1,0 +1,44 @@
+API's (Application programming interface)
+
+An application programming interface is an interface or communication protocol between different parts of a computer program intended to simplify the implementation and maintenance of software. An API may be for a web-based system, operating system, database system, computer hardware.
+API is the messenger that delivers your request to the provider that you're requesting it from and then delivers the response back to you.
+
+REST 
+
+A REST API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST leverages less bandwidth, making it more suitable for internet usage.
+
+
+                                          --------HTTP Request-->
+                           CLIENT         <-------HTTP Response--        Rest Web Service SERVER
+                           
+ 
+gRPC (gRPC Remote Procedure Calls) is an open source remote procedure call (RPC) system initially developed at Google.
+
+gRPC is a high performance, open-source remote procedure call (RPC) framework that can run anywhere. It enables client and server applications to communicate transparently, and makes it easier to build connected systems.
+gRPC is roughly 7 times faster than REST when receiving data & roughly 10 times faster than REST when sending data for this specific payload. This is mainly due to the tight packing of the Protocol Buffers and the use of HTTP/2 by gRPC.
+
+HTTP/2 focuses on optimizing the flow of content between clients and servers. It's fully backwards-compatible with HTTP/1.1, meaning websites will work the same with either protocol. When a user connects to a server, their browser negotiates an HTTP session with the server.
+Developed by: Internet Engineering Task Force.
+
+Orchestration System
+
+Orchestration is the automated configuration, coordination, and management of computer systems and software. A number of tools exist for automation of server configuration and management.
+
+K8s
+
+Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts".It works with a range of container tools, including Docker.
+ 
+Docker Swarm
+
+As a platform, Docker has revolutionized the manner software was packaged. Docker Swarm or simply Swarm is an open-source container orchestration platform and is the native clustering engine for and by Docker. Any software, services, or tools that run with Docker containers run equally well in Swarm. Also, Swarm utilizes the same command line from Docker.
+
+Kubernetes: An application can be deployed in Kubernetes utilizing a combination of services (or microservices), deployments, and pods.
+
+Docker Swarm: The applications can be deployed as micro-services or services in a swarm cluster in Docker Swarm. YAML(YAML Ain’t Markup Language) files can be utilized to identify multi-container. Moreover, Docker compose can install the application.
+
+
+
+ 
+                           
+                           
+                           
