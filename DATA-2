@@ -27,6 +27,15 @@ Orchestration is the automated configuration, coordination, and management of co
 K8s
 
 Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts".It works with a range of container tools, including Docker.
+
+Kubernetes nodes
+
+A node is a worker machine in Kubernetes, previously known as a minion . A node may be a VM or physical machine, depending on the cluster. Each node contains the services necessary to run pods and is managed by the master components. The services on a node include the container runtime, kubelet and kube-proxy.
+
+NOTE-
+kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. Within a Kubernetes cluster, the kubelet functions as a local agent that watches for pod specs via the Kubernetes API server
+
+kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service. concept. kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
  
 Docker Swarm
 
@@ -34,8 +43,16 @@ As a platform, Docker has revolutionized the manner software was packaged. Docke
 
 Kubernetes: An application can be deployed in Kubernetes utilizing a combination of services (or microservices), deployments, and pods.
 
+A Kubernetes pod is a group of containers that are deployed together on the same host. If you frequently deploy single containers, you can generally replace the word "pod" with "container".
+
 Docker Swarm: The applications can be deployed as micro-services or services in a swarm cluster in Docker Swarm. YAML(YAML Ain’t Markup Language) files can be utilized to identify multi-container. Moreover, Docker compose can install the application.
 
+Apache Mesos
+
+Mesos is a open source software originally developed at the University of California at Berkeley. It sits between the application layer and the operating system and makes it easier to deploy and manage applications in large-scale clustered environments more efficiently.
+
+Developed by: Apache Software Foundation
+Written in: C++ 
 
 
  
